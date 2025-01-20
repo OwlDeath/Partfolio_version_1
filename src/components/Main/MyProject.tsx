@@ -13,6 +13,7 @@ const MyProject = () => {
   const fetchData = usersStore((state) => state.fetchData);
   const isMounted = useRef<boolean>(false);
   const repos = usersStore(selectRepos);
+console.log(repos);
 
 
   const projects = [

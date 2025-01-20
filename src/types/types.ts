@@ -7,7 +7,10 @@ export interface MovieAndTv {
     release_date: string,
     first_air_date: string,
     genre_ids: number[],
-    id: number
+    id: number,
+    homepage:string,
+    watchers_count: number,
+    created_at: string,
 }
 
 export interface UpcomingStateMovies {
