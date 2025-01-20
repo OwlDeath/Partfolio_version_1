@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+:root {
+  --bg: black;
+  --color: white;
+  --dark: #000;
+  --light: #fff;
+  --gray: #282828;
+  --light-gray: #7e7e7e;
+}
+
+.white-theme {
+  --bg: rgb(255, 255, 255);
+  --color: rgb(0, 0, 0);
+}
+
+body {
+  background: var(--bg);
+  transition: 0.3s;
+}
+@import url(fonts.scss);
+@import url(../../components/Header/Header.scss);
+@import url(../../components/Main/Main.scss);
+@import url(../../components/contact/Contact.scss);

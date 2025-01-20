@@ -1,0 +1,114 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+
+  &__list {
+    padding: 50px 0;
+    display: flex;
+    gap: 30px;
+    color: var(--color);
+    align-items: center;
+    transition: 0.5s;
+
+    &-but {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+      i {
+        color: var(--color);
+        font-size: 25px;
+        &:hover {
+          background: linear-gradient(270deg, #dba6f4 0%, #a981fe 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    li a {
+      font-family: DBsB;
+      color: var(--color);
+      transition:  0.3s;
+    }
+    li a:hover {
+      background: linear-gradient(270deg, #dba6f4 0%, #a981fe 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+    }
+    li {
+      a {
+        font-family: DBsB;
+        color: var(--color);
+
+      }
+      img {
+        gap: 5px;
+        color: var(--color);
+      }
+    }
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 130px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        background: linear-gradient(270deg, #dba6f4 0%, #a981fe 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: NPS;
+        font-size: 45px;
+      }
+    }
+  }
+  &.scrolled {
+    background-color: var(--bg);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+  }
+  &__content {
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    .star {
+      position: absolute;
+      right: 550px;
+      width: 100px;
+    }
+    &-avatar {
+      border-radius: 100%;
+      width: 186px;
+      height: 186px;
+    }
+    h1 {
+      font-family: DBsB;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 133%;
+      text-align: center;
+      background: linear-gradient(270deg, #dba6f4 0%, #a981fe 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

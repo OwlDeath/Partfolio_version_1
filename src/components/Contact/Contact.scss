@@ -1,0 +1,191 @@
+.contact {
+  position: relative;
+  .star{
+    position: absolute;
+    width: 100px;
+    top: 450px;
+    right:500px;
+  }
+  &-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px "Oswald", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    background: linear-gradient(270deg, #bff0ff 0%, #82b4ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+}
+.frame-2 {
+  display: flex;
+  margin-left: 680px;
+}
+
+.form {
+  &-horizontal {
+    max-width: 400px;
+    font-family: "Lato";
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    textarea {
+      max-width: 400px;
+      background-color: #000;
+      color: #fff;
+      letter-spacing: 1px;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #3e4043;
+      resize: none;
+      &::placeholder {
+        background: linear-gradient(270deg, #bff0ff 0%, #82b4ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  &-control {
+    max-width: 400px;
+    background-color: var(--bg);
+    color: #fff;
+    letter-spacing: 1px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3e4043;
+    background: linear-gradient(270deg, #bff0ff 0%, #82b4ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.send-button {
+  width: 100%;
+  padding: 10px;
+  background: var(--bg);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #303134;
+  background: linear-gradient(270deg, #bff0ff 0%, #82b4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.direct-contact-container {
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    .list-item {
+      line-height: 4;
+      color: #aaa;
+      i {
+        font-size: 25px;
+        background: linear-gradient(270deg, #bff0ff 0%, #82b4ff 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .contact-text {
+        font: 300 18px "Lato", sans-serif;
+        letter-spacing: 1.9px;
+        color: #bbb;
+        a:hover {
+          color: var(--color);
+          text-decoration: none;
+        }
+      }
+      .place {
+        margin-left: 62px;
+      }
+
+      .phone {
+        margin-left: 56px;
+        a {
+          color: #bbb;
+          text-decoration: none;
+          transition-duration: 0.2s;
+        }
+      }
+
+      .gmail {
+        margin-left: 53px;
+      }
+    }
+  }
+
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    a {
+      li {
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 10px 3px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: var(--bg);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        i{
+          color: var(--color);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          border-radius: 50%;
+          opacity: 0;
+          box-shadow: 0 0 0 1px var(--color);
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+          background-color: var(--bg);
+          opacity: 1;
+          transform: scale(1.12);
+          transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+
+          &::after {
+            opacity: 1;
+            transform: scale(1.12);
+            transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+          }
+        }
+       
+      }
+    }
+  }
+  hr {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
